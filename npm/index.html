@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>甄别野鸡大学 & 中国大学查询</title>
+</head>
+<body>
+    <script src="./univ-query.min.js"></script>
+    <script>
+        const arr = [
+            UQuery('北京工').length,
+            UQuery.isFake('北京大学'),
+            UQuery.isFake('山西经济技术学院'),
+            UQuery.isFake('伦敦东南商学院'),
+            UQuery.isFake('anything')
+        ]
+
+        if(arr.toString() !== '5,no,yes,yes,unknown'){
+            alert('Test fail: '+ arr.toString());
+            throw new Error('Test failed: ', arr);
+        }
+
+        alert('Test passed: ', arr);
+    </script>
+</body>
+</html>

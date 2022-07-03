@@ -1,19 +1,21 @@
 {
-  "name": "university",
-  "version": "1.0.0",
+  "name": "univ-query",
+  "version": "1.0.1",
   "description": "",
   "main": "index.js",
   "scripts": {
     "build": "webpack --config webpack-config/build.js",
+    "build:npm": "webpack --config webpack-config/build-npm.js",
     "dev": "webpack-dev-server --open --config webpack-config/dev.js",
-    "lint": "eslint src --ext js"
+    "lint": "eslint src --ext js",
+    "test": "node public/test-npm.js",
+    "test:web": "serve npm",
+    "publish": "npm publish npm"
   },
   "author": "",
   "license": "MIT",
   "devDependencies": {
     "@babel/core": "7.6.4",
-    "@babel/plugin-proposal-object-rest-spread": "7.6.2",
-    "@babel/plugin-syntax-dynamic-import": "7.2.0",
     "@babel/preset-env": "7.6.3",
     "@commitlint/cli": "8.2.0",
     "@commitlint/config-conventional": "8.2.0",
@@ -37,7 +39,6 @@
     "less": "3.11.1",
     "less-loader": "5.0.0",
     "lint-staged": "9.4.2",
-    "lz-string": "1.4.4",
     "mini-css-extract-plugin": "0.9.0",
     "optimize-css-assets-webpack-plugin": "5.0.3",
     "raw-loader": "4.0.0",

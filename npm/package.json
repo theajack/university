@@ -1,0 +1,28 @@
+{
+    "name": "univ-query",
+    "main": "univ-query.min.js",
+    "unpkg": "univ-query.min.js",
+    "jsdelivr": "univ-query.min.js",
+    "version": "1.0.1",
+    "description": "甄别野鸡大学 & 中国大学查询",
+    "typings": "univ-query.min.d.ts",
+    "scripts": {},
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/theajack/university.git"
+    },
+    "keywords": [
+        "大学查询",
+        "野鸡大学",
+        "虚假大学",
+        "university query",
+        "theajack",
+        "tackchen"
+    ],
+    "author": "theajack",
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/theajack/university/issues"
+    },
+    "homepage": "https://theajack.github.io/university/"
+}
