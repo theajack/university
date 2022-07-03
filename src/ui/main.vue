@@ -105,7 +105,7 @@
         width: 100%;
         height: 100%;
         position: absolute;
-        background-image: url('/images/bg.jpg');
+        background-image: url('https://fastly.jsdelivr.net/gh/theajack/university/docs/images/bg.jpg');
         background-size: cover;
         background-position: center;
         filter: blur(3px);
